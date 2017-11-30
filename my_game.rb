@@ -46,7 +46,6 @@ def game_response(playr)
   when "no"
     puts "You awake suddenly in your bed at home, realizing it was all a dream."
     puts "\nGAME OVER"
-    start_game
   else
     puts "A countdown begins on the TV screen."
     alt_compete_run
@@ -84,7 +83,6 @@ def fight_or_flight_response(usr)
   when "flight" || "run home"
     puts "You sprint out of the building and you are stopped by your best friend laughing in front of their car, you've realized they've pulled the ultimate prank."
     puts "\nGAME OVER"
-    start_game
   else
     puts "You see a tall man dressed in a black suit walking towards you."
     alt_ending
@@ -109,16 +107,13 @@ def save_shout_response(hlp)
     puts "You rush up the stairs and grab your friend before they can fall."
     puts "\nA curtain behind the top of the stairwell opens and out walks Andrea, clapping for your heroic save. You've passed the test."
     puts "\nGAME OVER"
-    start_game
   when "shout"
     puts "Superman comes flying through the air and barely saves your friend from falling."
     puts "Your best friend and Superman realize that it was meant to be and they've retired together and live happliy in New York City."
     puts "\nGAME OVER"
-    start_game
   else
     puts "A bright flash goes off and you realize a photographer just took your photo. You have become the new fail meme and this was all a prank."
     puts "\nGAME OVER"
-    start_game
   end
 end
 
@@ -133,7 +128,6 @@ def alt_ending
   GAME OVER
 
   EOF
-  start_game
 end
 
 #----------------------- Game Play ----------------------#
